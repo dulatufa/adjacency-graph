@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>aardvark: doxygen-cmake-github</title>
+<title>listgraph: doxygen-cmake-github</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">aardvark
+   <div id="projectname">listgraph
    &#160;<span id="projectnumber">0.4.0</span>
    </div>
   </td>
@@ -103,7 +103,7 @@ VS Code VM Instructions</h2>
 <li>Edit <a class="el" href="README_8md.html">README.md</a> to reflect your new project</li>
 <li>Edit the <code>project</code> line in the CMakeLists.txt file to have your project's name and version</li>
 <li>Edit the <code>add_executable</code> line in the CMakeLists.txt file to change the name of the executable file to something relevant</li>
-<li>Change the @brief, @details, @author, and @date in <a class="el" href="main_8cpp.html" title="This is a test of CMake, doxygen, and GitHub.">src/main.cpp</a></li>
+<li>Change the @brief, @details, @author, and @date in <a class="el" href="main_8cpp.html" title="This is a graph project.">src/main.cpp</a></li>
 <li>To create the PDF on a standard Ubuntu install, the following need to be added: <code>sudo apt install graphviz texlive-latex-base texlive-latex-recommended texlive-latex-extra</code></li>
 <li>Doxygen also needs installing: <code>sudo apt install doxygen</code></li>
 <li>In the terminal, change to the <code>build</code> directory (should have been automatically generated)</li>
@@ -133,7 +133,7 @@ VS Code VM Instructions</h2>
 </ol>
 <h2><a class="anchor" id="autotoc_md3"></a>
 General Usage</h2>
-<p>During normal development, you will change <a class="el" href="main_8cpp.html" title="This is a test of CMake, doxygen, and GitHub.">main.cpp</a>, maybe add more files in the src directory, make them, and run them. To update the documentation on the web do the following at a terminal prompt in your project's <code>build</code> directory:</p><ol type="1">
+<p>During normal development, you will change <a class="el" href="main_8cpp.html" title="This is a graph project.">main.cpp</a>, maybe add more files in the src directory, make them, and run them. To update the documentation on the web do the following at a terminal prompt in your project's <code>build</code> directory:</p><ol type="1">
 <li><code>make</code></li>
 <li><code>make docs</code></li>
 <li><code>make pdf</code> Then in your project's root directory do the following:</li>
@@ -143,6 +143,7 @@ General Usage</h2>
 <li>VS Code also has git built into it, but the use of branches isn't as easy a workflow as the commandline offers for me (personal opinion).</li>
 </ol>
 </li>
+<li>Note that in order for numbered (ordered) lists to work across markdown and Doxygen HTML and PDF outputs they are explicitly numbered vs markdown all being 1. or Doxygen's -#.</li>
 </ol>
 <h1><a class="anchor" id="autotoc_md4"></a>
 References</h1>
